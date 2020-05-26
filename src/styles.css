@@ -1,0 +1,20 @@
+body {
+  background-color: rgb(44, 62, 80);
+}
+
+.navbar {
+  position: relative;
+  min-width: 50px;
+  padding: 1.5rem;
+}
+.brand {
+  position: absolute;
+  left: 50%;
+  margin-left: -50px !important;  /* 50% of your logo width */
+  display: block;
+  color: beige;
+}
+
+.jumbotron{
+  margin-top: 2rem;
+}
