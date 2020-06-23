@@ -6,9 +6,7 @@ import "./styles.css";
 
 const TwButton = props => {
   return (
-    <button type="button" className="btn btn-lg btn-info float-left" href="https://twitter.com/intent/tweet" id="tweet-quote">
-      {props.tw}<img alt="twitter" src="img/tw.png" width="25" />
-    </button>
+    <a id="tweet-quote" type="button" href="twitter.com/intent/tweet" className="btn btn-sm btn-info float-left" data-show-count="false">Tweet <img alt="twitter" src="img/tw.png" width="25" /></a>
   );
 };
 
@@ -41,11 +39,11 @@ class Wrapper extends React.Component {
     return (
       <div>
       <blockquote class="blockquote text-center"> 
-        <p class="lead mb-0 h2">"{this.state.quote}"</p>
-        <footer class="blockquote-footer h5">{this.state.character}</footer>
+        <p id="text" class="lead mb-0 h2">"{this.state.quote}"</p>
+        <footer id="author" class="blockquote-footer h5">{this.state.character}</footer>
         </blockquote>
         <TwButton tw="Share " />
-        <button type="button" className="btn btn-lg btn-success float-right" onClick={this.getRandomeQuote} >Next</button>
+        <button id="new-quote" type="button" className="btn btn-lg btn-success float-right" onClick={this.getRandomeQuote} >Next</button>
       </div>
     );
   }
